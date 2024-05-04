@@ -40,22 +40,13 @@ function startTimer() {
             mins++;
         }
     }
-}
 
-
-// let msecString = msec < 10 ? `0${msec}` : msec;
-//     let secsString = secs < 10 ? `0${secs}` : secs;
-//     let minsString = mins < 10 ? `0${mins}` : mins;
-    
-
-
-let msecString;
+    let msecString;
 if (msec < 10) {
     msecString = `0${msec}`;
 } else {
     msecString = msec;
 }
-
 
 let secsString;
 if (secs < 10) {
@@ -72,4 +63,14 @@ if (mins < 10) {
 }
 
 
-timerDisplay.innerHTML = (`${minsString} : ${secsString} : ${msecString}`)
+timerDisplay.innerHTML = `${minsString} : ${secsString} : ${msecString}`;
+
+}
+
+
+// let msecString = msec < 10 ? `0${msec}` : msec;
+//     let secsString = secs < 10 ? `0${secs}` : secs;
+//     let minsString = mins < 10 ? `0${mins}` : mins;
+    
+
+
